@@ -1,0 +1,42 @@
+.container {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   h1 {
+     width: fit-content;
+     background-color: #333;
+     color: #fff;
+     margin: 0 auto;
+   
+   }
+  
+   
+   table {
+     border-spacing: 0;
+     margin-top: 30px;
+     th,
+     td {
+       border: 1px solid #dddddd;
+     }
+     thead {
+       border: 1px solid #333;
+       color: #333;
+       background: #ececec;
+   
+       th {
+         padding: 7px;
+       }
+     }
+     tr {
+     }
+   
+     input {
+       border: none;
+       outline: none;
+       padding: 7px;
+       width: auto;
+     }
+   }

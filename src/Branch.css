@@ -1,0 +1,107 @@
+.Menu-Container{
+  width: 100%;
+}
+   #btns{
+    background-color: #ecf0f3;
+   margin: 70px auto;
+    width: 12.5%;
+    padding: 20px 10px 10px 5px;
+    border-radius: 15px;
+    box-shadow: 4px 13px 20px #cbced1, -13px -13px 20px #fff;
+   text-align: center;
+   
+   
+   }
+   
+
+  
+   @media screen and (max-width: 280px){
+    #btns{
+      margin-right: -8px;
+      box-shadow: 1px 10px 30px #cbced1, -15px -17px 1px #fff;
+    }
+   }
+   
+   .containerTab {
+     padding: 20px;
+     color: white;
+   }
+   
+   /* Clear floats after the columns */
+   .row:after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+   
+   /* Closable button inside the image */
+   .closebtn {
+     float: right;
+     color: white;
+     font-size: 35px;
+     cursor: pointer;
+   }
+ 
+  .container{
+    width: 400px;
+    margin-top: 90px;
+    
+ 
+
+  }
+  .bdr{
+    border-radius: 15px;
+    overflow: hidden;
+    
+  }
+  .inps{
+    border: none;
+    outline: none;
+    color: rgb(11, 9, 9);
+    background: none;
+    
+ 
+  }
+  .trash{
+    color: black;
+  }
+  #map{
+    height: 400px !important;
+    padding: 10px !important;
+}
+#PrContainer{
+  width: 100%;
+
+}
+#Pr-Col{
+  width: 25%;
+}
+#third-btn,#first-btn,#second-btn,#forth-btn{
+  color: #fff;
+  padding: 20px 20px 15px 10px ;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  transition: .3s ease-in-out;
+
+}
+#first-btn {border-color: #8bbabb; background: #8bbabb;}
+#second-btn{ background: #6495ED;border-color: #6495ED ;}
+#third-btn{border-color: #b96b9f;background: #b96b9f;}
+#forth-btn{background-color: #ec8f6a;border-color: #ec8f6a;}
+#first-btn:hover{transform: scale(1.1);}
+#second-btn:hover{transform:  scale(1.1);}
+#third-btn:hover{transform:  scale(1.1);}
+#forth-btn:hover{transform:  scale(1.1);}
+
+@media (min-width:280px){
+  #third-btn,#first-btn,#second-btn,#forth-btn{
+    
+    text-align: center;
+    font-size: 1em;
+    padding: 2.5em 0.5em;
+
+  }
+
+}
+

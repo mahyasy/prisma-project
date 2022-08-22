@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <!--PRISMA-->
+    <meta name="description" content="Latest updates and statistic charts">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+    <!--begin::Web font -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {"families":["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]},
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+
+    <!--end::Web font -->
+
+    <!--begin:: Global Mandatory Vendors -->
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+
+    <!--end:: Global Mandatory Vendors -->
+
+    <!--begin:: Global Optional Vendors -->
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/tether/dist/css/tether.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/bootstrap-datetime-picker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/select2/dist/css/select2.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/nouislider/distribute/nouislider.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/owl.carousel/dist/assets/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/owl.carousel/dist/assets/owl.theme.default.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/ion-rangeslider/css/ion.rangeSlider.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/ion-rangeslider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/summernote/dist/summernote.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/bootstrap-markdown/css/bootstrap-markdown.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/animate.css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/toastr/build/toastr.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/jstree/dist/themes/default/style.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/morris.js/morris.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/chartist/dist/chartist.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/socicon/css/socicon.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/vendors/line-awesome/css/line-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/vendors/flaticon/css/flaticon.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/vendors/metronic/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="http://behyab.com/prisma/Template/Simple/public/vendors/vendors/fontawesome5/css/all.min.css" rel="stylesheet" type="text/css" />
+
+    <!--end:: Global Optional Vendors -->
+
+
+
+    <!--begin:: Noandish -->
+        <link rel="stylesheet" href="http://behyab.com/prisma/Template/Simple/public/css/font.css">
+        <link rel="stylesheet" href="http://behyab.com/prisma/Template/Simple/public/css/colors.css">
+
+
+    <!--begin::Bootstrap4 -->
+    <link rel="stylesheet" href="http://behyab.com/prisma/Template/Simple/public/css/bootstrap4/bootstrap.css">
+    <link rel="stylesheet" href="http://behyab.com/prisma/Template/Simple/public/css/bootstrap4/bootstrap-grid.css">
+    <link rel="stylesheet" href="http://behyab.com/prisma/Template/Simple/public/css/bootstrap4/bootstrap-reboot.css">
+    <!--end::Bootstrap4-->
+
+
+        <!--begin::clockpicker - datepicker -->
+        <link rel="stylesheet" href="http://behyab.com/prisma/Template/Simple/public/css/tools.css">
+        <link rel="stylesheet" href="http://behyab.com/prisma/Template/Simple/public/css/clockpicker.css">
+        <link rel="stylesheet" href="http://behyab.com/prisma/Template/Simple/public/css/bootstrap-datepicker.css">
+        <!--end::clockpicker - datepicker-->
+
+        <!-- Toastr CSS -->
+        <link type="text/css" href="http://behyab.com/prisma/Template/Simple/public/css/toastr.css" rel="stylesheet">
+
+    <!--end:: Noandish -->
+
+
+
+
+
+
+    <!--begin::Global Theme Styles -->
+    <!--LTR version:-->
+        <!--<link href="http://behyab.com/prisma/Template/Simple/public/assets/demo/base/style.bundle.css" rel="stylesheet" type="text/css" />-->
+    <!--RTL version:-->
+        <link href="http://behyab.com/prisma/Template/Simple/public/assets/demo/base/style.bundle.rtl.css" rel="stylesheet" type="text/css" />
+    <!--<link href="http://behyab.com/prisma/Template/Simple/public/assets/vendors/base/vendors.bundle.rtl.css" rel="stylesheet" type="text/css" />-->
+
+    <!--end::Global Theme Styles -->
+
+    <!--begin::Page Vendors Styles -->
+    <!--LTR version:-->
+         <!--<link href="http://behyab.com/prisma/Template/Simple/public/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />-->
+    <!--RTL version:-->
+         <link href="http://behyab.com/prisma/Template/Simple/public/assets/vendors/custom/fullcalendar/fullcalendar.bundle.rtl.css" rel="stylesheet" type="text/css" />
+    <!--end::Page Vendors Styles -->
+
+
+
+
+
+
+
+
+
+    <!--<link rel="shortcut icon" href="http://behyab.com/prisma/Template/Simple/public/assets/demo/media/img/logo/favicon.ico" />-->
+    <link rel="shortcut icon" href="http://behyab.com/prisma/Template/Simple/public/aragon/img/brand/favicon.png" type="image/png" />
+
+    <!--END OF PRISMA-->
+
+<!--pincode-->
+<link href="/path/to/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap-pincode-input.css" rel="stylesheet">
+<script src="bootstrap-pincode-input.js"></script>
+<script src="/path/to/jquery-2.1.4.min.js"></script>
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.7.2/css/all.css"></script>
+    <script src="index.jsx" type="text/babel"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <div id="div1">
+
+
+  </body>
+</html>
